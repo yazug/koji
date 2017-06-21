@@ -2806,7 +2806,7 @@ def _taskLabel(taskInfo):
     method = taskInfo['method']
     arch = taskInfo['arch']
     extra = ''
-    if method in ('build', 'maven'):
+    if method in ('build', 'maven', 'buildContainer'):
         if 'request' in taskInfo:
             source, target = taskInfo['request'][:2]
             if '://' in source:
